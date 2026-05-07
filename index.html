@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixteco Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7eIaP3PUtsqVGBWt2rkpwVxzKc0RTJ7oEfcLTq_1aUrse79fVTJPK_1aUrse79fVTJPJ_1aUrse79fVTJP/s320/logo01sn.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex min-h-screen">
+
+    <aside id="sidebar" class="fixed inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-50 w-64 bg-gray-900 text-white shadow-xl flex flex-col items-center py-8">
+
+        <div class="flex flex-col items-center mb-12">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7eIaP3PUtsqVGBWt2rkpwVxzKc0RTJ7oEfcLTq_1aUrse79fVTJP2IvyCg0PoiNqCxNxJ24v68OWMPvFxfbuAo1_G95hBZKdl-3qrVYmUmYFJ27zWUeTrlKQo-9BlFTZFSS5kyg1BRt48vRnF4FQLzyiEHgnuNgH0z53Vx1FFGz3S1T5qH6DsH-9cGMiv/s320/logo01sn.png" alt="Mixteco Studio Logo" class="w-24 h-24 rounded-full mb-4 object-cover">
+            <h2 class="text-2xl font-bold text-gray-200">Mixteco Studio</h2>
+        </div>
+
+        <nav class="w-full px-4 flex flex-col">
+            <a href="#inicio" class="nav-link-tab flex items-center w-full p-4 rounded-lg transition-all duration-300 hover:scale-105 active-link bg-gray-700 border-l-4 border-blue-500">
+                <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                <span>Inicio</span>
+            </a>
+            <a href="#sobre-mixteco" class="nav-link-tab flex items-center w-full p-4 rounded-lg transition-all duration-300 hover:scale-105">
+                <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 5a1 1 0 011-1h12a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1V9zm1-1v1a1 1 0 001 1h10a1 1 0 001-1V8H4z" clip-rule="evenodd"></path></svg>
+                <span>Conócenos</span>
+            </a>
+            <a href="#proyectos" class="nav-link-tab flex items-center w-full p-4 rounded-lg transition-all duration-300 hover:scale-105">
+                <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM4.03 8.03a1 1 0 010-1.414l2-2a1 1 0 011.414 0l1 1a1 1 0 010 1.414l-2 2a1 1 0 01-1.414 0zM10 12a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                <span>Proyectos</span>
+            </a>
+            <a href="#contacto" class="nav-link-tab flex items-center w-full p-4 rounded-lg transition-all duration-300 hover:scale-105">
+                <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                <span>Contacto</span>
+            </a>
+        </nav>
+    </aside>
+
+    <main class="flex-1 overflow-y-auto md:ml-64 relative bg-gray-100 flex flex-col">
+        
+        <button id="menu-button" class="md:hidden fixed top-4 left-4 z-50 bg-blue-600 text-white p-2 rounded-full shadow-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+
+        <div id="content-wrapper" class="flex-1 overflow-y-auto">
+
+            <section id="inicio" class="content-section py-24 md:py-32 bg-gradient-to-r from-blue-500 to-purple-600 text-white flex items-center justify-center min-h-screen">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
+                        Mixteco Studio
+                    </h1>
+                    <p class="text-lg md:text-xl font-light mb-8">
+                        Empresa de desarrollo de software especializada en crear soluciones digitales de vanguardia para web y dispositivos móviles. Nos enfocamos en transformar ideas en productos funcionales y atractivos, creando herramientas digitales de vanguardia.
+                    </p>
+                </div>
+            </section>
+
+            <section id="sobre-mixteco" class="content-section hidden py-20 md:py-24 bg-gray-50">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">Sobre Mixteco Studio</h2>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Misión</h3>
+                    <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+                        Nuestra misión es empoderar a nuestros clientes a través de la tecnología, desarrollando software y aplicaciones web y móviles de alta calidad que resuelvan problemas complejos, mejoren su eficiencia y los ayuden a alcanzar sus objetivos de negocio. Buscamos ser un socio estratégico que ofrezca soluciones innovadoras y personalizadas.
+                    </p>
+
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Visión</h3>
+                    <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-8">
+                        Aspiramos a ser un referente en la industria de desarrollo de software, reconocidos por la excelencia, la creatividad y la innovación. Buscamos construir un ecosistema de soluciones digitales que no solo satisfagan las necesidades actuales de nuestros clientes, sino que también anticipen las futuras tendencias tecnológicas, generando un impacto positivo y duradero.
+                    </p>
+
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Valores</h3>
+                    <ul class="list-disc list-inside space-y-4 text-gray-700 text-lg md:text-xl leading-relaxed">
+                        <li>
+                            <strong class="font-semibold text-gray-900">Innovación:</strong> Estamos en constante búsqueda de nuevas tecnologías y metodologías para ofrecer soluciones modernas y eficientes que mantengan a nuestros clientes a la vanguardia.
+                        </li>
+                        <li>
+                            <strong class="font-semibold text-gray-900">Calidad:</strong> Nos comprometemos a entregar productos robustos, confiables y bien diseñados. Cada línea de código es un reflejo de nuestro estándar de excelencia.
+                        </li>
+                        <li>
+                            <strong class="font-semibold text-gray-900">Colaboración:</strong> Creemos en la importancia de trabajar mano a mano con nuestros clientes. Su visión y nuestras habilidades técnicas son la fórmula para el éxito.
+                        </li>
+                        <li>
+                            <strong class="font-semibold text-gray-900">Responsabilidad:</strong> Asumimos la responsabilidad de cada proyecto y nos esforzamos por cumplir con los plazos y objetivos establecidos, manteniendo una comunicación transparente en todo momento.
+                        </li>
+                        <li>
+                            <strong class="font-semibold text-gray-900">Pasión:</strong> Nos apasiona el desarrollo de software. Esta energía nos motiva a superar desafíos, aprender continuamente y crear soluciones que nos enorgullecen.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="proyectos" class="content-section hidden py-20 md:py-24 bg-gray-50">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Nuestros Proyectos</h2>
+
+                    <div id="projects-dynamic-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="contacto" class="content-section hidden py-20 md:py-24 bg-gray-100">
+                <div class="container mx-auto px-6 max-w-2xl bg-white p-8 rounded-lg shadow-xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">Contáctanos</h2>
+                    <p class="text-lg text-gray-700 mb-8 text-center">
+                        ¿Tienes una idea? ¡Queremos escucharla! Envíanos un mensaje y te contactaremos a la brevedad.
+                    </p>
+                    <form id="contact-form" action="https://formspree.io/f/movnrnkp" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3 border">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3 border">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-3 border"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="w-full md:w-auto bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+                                Enviar mensaje
+                            </button>
+                        </div>
+                        <div id="form-message" class="mt-4 text-center hidden"></div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        
+        <footer class="bg-gray-800 text-white py-6 mt-auto">
+            <div class="container mx-auto px-6 text-center">
+                <p>&copy; 2024 Mixteco Studio. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </main>
+
+    <div id="project-modal" class="hidden fixed inset-0 z-[100] bg-black bg-opacity-75 flex items-center justify-center p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl max-w-4xl w-full p-8 relative transform transition-all duration-300 scale-95 md:scale-100">
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div id="modal-content" class="flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-8 overflow-y-auto max-h-[80vh]">
+
+                <div id="image-flip-container" class="flex-shrink-0 w-full md:w-1/2">
+
+                </div>
+                
+                <div class="flex-1 w-full">
+                    <h3 id="modal-title" class="text-2xl font-bold mb-4 text-gray-900">Detalles del Proyecto</h3>
+                    <p id="modal-description" class="text-gray-600 mb-4"></p>
+                    <p id="modal-platform" class="text-gray-600 mb-4"></p>
+                    <p id="modal-tech" class="text-gray-600 mb-4"></p>
+                    <div class="mt-6 flex flex-col space-y-2">
+                        <a id="modal-privacy" href="#" class="text-blue-600 hover:underline">Política de Privacidad</a>
+                        <a id="modal-terms" href="#" class="text-blue-600 hover:underline">Términos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="privacy-modal" class="hidden fixed inset-0 z-[100] bg-black bg-opacity-75 flex items-center justify-center p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl max-w-4xl w-full p-8 relative transform transition-all duration-300 scale-95 md:scale-100 max-h-[90vh] overflow-y-auto">
+            <button id="close-privacy-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-2xl font-bold mb-4 text-gray-900 text-center">Política de Privacidad</h3>
+            <div id="privacy-content" class="text-gray-700 space-y-4"></div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="hidden fixed inset-0 z-[100] bg-black bg-opacity-75 flex items-center justify-center p-4 transition-opacity duration-300">
+        <div class="bg-white rounded-lg shadow-xl max-w-4xl w-full p-8 relative transform transition-all duration-300 scale-95 md:scale-100 max-h-[90vh] overflow-y-auto">
+            <button id="close-terms-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-2xl font-bold mb-4 text-gray-900 text-center">Términos y Condiciones</h3>
+            <div id="terms-content" class="text-gray-700 space-y-4"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
